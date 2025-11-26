@@ -1,5 +1,6 @@
-# Cambia la etiqueta de la versión para que coincida con la requerida por tu librería de Playwright
-FROM mcr.microsoft.com/playwright/python:v1.56.0-jammy 
+# 1. IMAGEN BASE: Usa la etiqueta 'latest' de Jammy para obtener la versión más reciente y estable.
+# Esto asegura que el entorno de Linux tenga todo lo que Playwright necesita.
+FROM mcr.microsoft.com/playwright/python:jammy
 
 # 2. DIRECTORIO DE TRABAJO
 WORKDIR /app
