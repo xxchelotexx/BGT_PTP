@@ -1,19 +1,15 @@
-# 1. Usar una imagen base de Playwright que incluye navegadores y dependencias.
-# Esto asegura que el entorno de Linux tenga todo lo que Playwright necesita.
-FROM mcr.microsoft.com/playwright/python:v1.40.0-jammy
+# Cambia la etiqueta de la versión para que coincida con la requerida por tu librería de Playwright
+FROM mcr.microsoft.com/playwright/python:v1.56.0-jammy 
 
-# 2. Establecer el directorio de trabajo
+# 2. DIRECTORIO DE TRABAJO
 WORKDIR /app
 
-# 3. Copiar e instalar las dependencias de Python
+# 3. INSTALAR DEPENDENCIAS DE PYTHON: Copia tu lista de requerimientos e instálalos.
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 4. Copiar el resto del código
+# 4. COPIAR CÓDIGO
 COPY . .
 
-# 5. Comando para iniciar la aplicación (usa el puerto $PORT de Railway)
-# Usamos un comando estándar de Python para iniciar tu app.py
-# El servidor de desarrollo de Flask no es ideal para producción, 
-# pero es el comando más simple.
+# 5. COMANDO DE INICIO
 CMD ["python", "app.py"]
