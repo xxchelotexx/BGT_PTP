@@ -1,0 +1,4 @@
+flask
+asyncio
+nest-asyncio
+playwright
