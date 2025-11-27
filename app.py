@@ -219,7 +219,7 @@ async def main_async():
 
 def obtener_datos_p2p_bitget():
     """Ejecuta la lógica de scraping asíncrono y genera el HTML."""
-    output_html = "<h1>📈 Reporte P2P Bitget (USDT/BOB)</h1><p style=font-size: 10px; color: #666;>By: Chelotex</p>"
+    output_html = "<h1>📈 BITGET (USDT/BOB)</h1><p style=font-size: 10px; color: #666;>By: Chelotex</p>"
     
     try:
         # Ejecutar la función asíncrona dentro de la función síncrona de Flask
