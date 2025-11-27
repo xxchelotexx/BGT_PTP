@@ -256,7 +256,7 @@ def index():
     <head>
         <meta charset="UTF-8">
         <title>Reporte P2P Bitget</title>
-        <meta http-equiv="refresh" content="10"> 
+        <meta http-equiv="refresh" content="50"> 
         <style>
             body {{ font-family: Arial, sans-serif; margin: 20px; }}
             h1, h2 {{ color: #333; }}
