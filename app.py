@@ -165,11 +165,11 @@ def procesar_datos_html(data, estado):
     
     # Adaptación a la nomenclatura de Bybit
     if estado == 0:
-        titulo = "🔴 Ofertas de Venta (Demandas)"
+        titulo = "🔴 Ofertas de Venta"
         color = "red"
         reverse_sort = True # Precio alto primero
     else:
-        titulo = "🟢 Ofertas de Compra (Ofertas)"
+        titulo = "🟢 Ofertas de Compra"
         color = "green"
         reverse_sort = False # Precio bajo primero
     
